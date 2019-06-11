@@ -7,67 +7,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-    <script src="assets/javascript/app.js"></script>
-    <title>Gifphy Paradise</title>
+    <!-- <script type="text/javascript" src="assets/javascript/app.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="assets/javascript/app.js"></script> 
+    <title>Gifphy Games</title>
 </head>
 
+
 <body>
-    <div class="videoGame">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2>Video Game</h2>
-                        </div>
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p class="buttonGenerator">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                                </p>
-                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
-                                        Title</cite></footer>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
 
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Video Games</span>
+        <form class="form-inline my-2 my-lg-0" id="Search">
+            <label for="Input" id="instructions">Add a Game!</label>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="Input">
+            <button class="btn btn-outline-info" type="submit" id="addTopic">Search</button>
+        </form>
+        </div>
+    </nav>
 
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <div class="card-header">
-                                    <h6>Add More Video Games</h6>
-                                </div>
+    <div class="container">
+        <div class="row">
+            <div class="btn-group inline pull-left">
+                <button class="btn btn-light" id="topic" data-search="MegaMan">MegaMan</button>
+                <button class="btn btn-light" id="topic" data-search="Witcher">Witcher</button>
+                <button class="btn btn-light" id="topic" data-search="Final Fantasy">Final Fantasy</button>
+                <button class="btn btn-light" id="topic" data-search="Overwatch">Overwatch</button>
 
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="inputGroup-sizing-default">Game</span>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Sizing example input"
-                                        aria-describedby="inputGroup-sizing-default">
-                                </div>
-                                <div class="btn btn-primary">Add Game</div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-                </div>
-
+                <div id="myButtons"></div>
             </div>
         </div>
     </div>
 
 
+    <div class="container">
+        <div class="row">
+            <span>
+                <div id="gifArea"></div>
+            </span>
+        </div>
+    </div>
 
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 
 </html>
